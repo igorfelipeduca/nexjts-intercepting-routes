@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { users } from "../lib/users";
+import { users } from "../../lib/users";
 import OpenLink from "@/components/icons/openLink";
 
 export default function Users() {
@@ -9,7 +9,7 @@ export default function Users() {
         {users.map((user) => (
           <li key={user.id} className="group flex w-32 justify-between items-center">
             <Link
-              href={`/user/${user.id}`}
+              href={`/users/${user.id}`}
               className="font-medium hover:underline"
             >
               {user.name}
